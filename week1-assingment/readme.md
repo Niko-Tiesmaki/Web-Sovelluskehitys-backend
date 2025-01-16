@@ -1,1 +1,0 @@
-The projects instructions were quite confusing
