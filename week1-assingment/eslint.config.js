@@ -3,7 +3,7 @@ import js from '@eslint/js'
 
 export default [
     {
-        languageoptions : {
+        languageOptions : {
             ecmaVersion: 2021,
             sourceType: 'module',
             globals: {...globals.node},
