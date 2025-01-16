@@ -5,11 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "BackEnd"
+    "url": "https://github.com/Niko-Tiesmaki/BackEnd/tree/week1"
   },
   "author": "Niko Tiesmäki",
   "license": "ISC",
