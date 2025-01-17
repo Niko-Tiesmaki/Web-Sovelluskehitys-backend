@@ -1,0 +1,28 @@
+
+
+### Luetaan dataa
+
+GET http://localhost:3000
+
+### morotesti
+GET http://localhost:3000/moro
+
+### Moro testi json formatissa
+
+GET http://localhost:3000/moro/json
+
+### Post
+
+POST http://localhost:3000/moro
+
+### Delete 
+DELETE http://localhost:3000/moro/99
+
+### Delete error response
+DELETE http://localhost:3000/moro/20
+
+### Put request
+PUT http://localhost:3000/moro/99 
+
+### Put error response (404 response)
+PUT http://localhost:3000/moro/20
