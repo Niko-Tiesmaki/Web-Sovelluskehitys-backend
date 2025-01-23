@@ -1,7 +1,7 @@
 {
-  "name": "week1-assingment",
+  "name": "week-2-assingment",
   "version": "1.0.0",
-  "description": "Assingment for week 1",
+  "description": "Assingment for week 2",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Niko-Tiesmaki/BackEnd/tree/main"
+    "url": "https://github.com/Niko-Tiesmaki/BackEnd/tree/week2"
   },
   "author": "Niko Tiesmäki",
   "license": "ISC",
