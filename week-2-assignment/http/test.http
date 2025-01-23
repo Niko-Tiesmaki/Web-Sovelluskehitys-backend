@@ -1,0 +1,16 @@
+### Testaus
+
+
+### Get items
+GET http://localhost:3000/items
+
+### Get items id
+GET http://localhost:3000/items/40
+
+### post items
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "name": "Vesimelooni"
+}
