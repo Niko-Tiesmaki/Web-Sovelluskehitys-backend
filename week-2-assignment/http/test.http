@@ -14,3 +14,43 @@ Content-Type: application/json
 {
     "name": "Vesimelooni"
 }
+
+### Update (PUT)
+PUT http://localhost:3000/items/update/2
+Content-Type: application/json
+
+{
+    "name": "Vesimelooni"
+}
+### Delete
+DELETE http://localhost:3000/items/delete/1
+
+### User tests
+GET http://localhost:3000/users
+
+### Get by id
+GET http://localhost:3000/users/1
+
+### POST user
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username" : "watermelon",
+    "password" : "watermelon1",
+    "email": "watermelon@melon.com"   
+}
+### PUT
+
+PUT http://localhost:3000/users/update/1
+Content-Type: application/json
+
+{
+    "username" : "watermelon",
+    "password" : "watermelon1",
+    "email": "watermelon@melon.com"    
+}
+### Delete
+
+DELETE http://localhost:3000/users/delete/4

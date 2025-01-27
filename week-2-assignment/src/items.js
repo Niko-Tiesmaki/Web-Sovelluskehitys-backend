@@ -17,7 +17,7 @@ const getById = (req, res) => {
     res.json(item);
   } else {
     res.status(404).json({message: 'No item with id: ' + req.params.id});
-  };
+  }
 };
 
 const addItem = (req, res) => {
@@ -33,5 +33,26 @@ const addItem = (req, res) => {
     res.json({message: 'Request is missing name property'});
   }
 };
-
-export {addItem, getItems, getById};
+const updateItem = (req, res) => {
+  console.log('Updating item with id of ' + req.params.id);
+  const item = items.find((item) => item.id == req.params.id);
+  if (item) {
+    const name = req.body.name;
+    item.name = name;
+    res.json(items);
+  } else {
+    res.status(404).json({message: 'No item with id: ' + req.params});
+  }
+};
+const deleteItem = (req, res) => {
+  console.log('Deleting item with id of ' + req.params.id);
+  const id = parseInt(req.params.id, 10);
+  const item = items.findIndex((item) => item.id === id);
+  if (item > -1) {
+    res.status(204);
+    items.splice(item, 1);
+  } else {
+    res.status(404).json({message: 'No item with id: ' + req.params.id});
+  }
+};
+export {addItem, getItems, getById, updateItem, deleteItem};
