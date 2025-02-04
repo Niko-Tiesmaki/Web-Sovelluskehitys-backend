@@ -2,13 +2,13 @@
 
 
 ### Get items
-GET http://localhost:3000/items
+GET http://localhost:3000/api/items
 
 ### Get items id
-GET http://localhost:3000/items/40
+GET http://localhost:3000/api/items/40
 
 ### post items
-POST http://localhost:3000/items
+POST http://localhost:3000/api/items
 Content-Type: application/json
 
 {
@@ -16,24 +16,24 @@ Content-Type: application/json
 }
 
 ### Update (PUT)
-PUT http://localhost:3000/items/update/2
+PUT http://localhost:3000/api/items/update/2
 Content-Type: application/json
 
 {
     "name": "Vesimelooni"
 }
 ### Delete
-DELETE http://localhost:3000/items/delete/1
+DELETE http://localhost:3000/api/items/delete/1
 
 ### User tests
-GET http://localhost:3000/users
+GET http://localhost:3000/api/users
 
 ### Get by id
-GET http://localhost:3000/users/1
+GET http://localhost:3000/api/users/1
 
 ### POST user
 
-POST http://localhost:3000/users
+POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
@@ -43,7 +43,7 @@ Content-Type: application/json
 }
 ### PUT
 
-PUT http://localhost:3000/users/update/1
+PUT http://localhost:3000/api/users/update/1
 Content-Type: application/json
 
 {
@@ -53,4 +53,4 @@ Content-Type: application/json
 }
 ### Delete
 
-DELETE http://localhost:3000/users/delete/4
+DELETE http://localhost:3000/api/users/delete/4
