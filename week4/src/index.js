@@ -3,6 +3,7 @@ import cors from 'cors';
 import {addItem, deleteItem, editItem, getItemById, getItems} from './items.js';
 
 import userRouter from './routes/user-router.js';
+import entryRouter from './routes/entry-router.js';
 const hostname = '127.0.0.1';
 const app = express();
 const port = 3000;
@@ -28,7 +29,7 @@ app.get('/api/', (req, res) => {
 // Users resurssin päätepisteet (endpoints)
 app.use('/api/users', userRouter);
 
-
+app.use('/api/entries', entryRouter);
 
 // Items (testi mock-data) resurssin päätepisteet (endpoints)
 app.get('/api/items', getItems);
