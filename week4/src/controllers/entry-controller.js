@@ -1,8 +1,9 @@
 import {addEntry, findEntryById, listAllEntries} from '../models/entry-model.js';
 
 
-const getEntries = (req, res) => {
-    res.json(listAllEntries());
+const getEntries = async (req, res) => {
+    const entries = await listAllEntries();
+    res.json(entries);
 };
 
 const getEntryById = (req, res) => {

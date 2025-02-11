@@ -4,7 +4,7 @@ const listAllEntries = async () => {
   const [rows] = await promisePool.query(
     'SELECT entry_id,user_id,entry_date,mood,weight,sleep_hours,notes FROM diaryentries',
   );
-  console.log('selectAllUsers result', rows);
+  console.log('selectEntries result', rows);
   return rows;
 };
 const findEntryById = async (userId) => {
