@@ -1,7 +1,7 @@
 {
-  "name": "week4",
+  "name": "week5",
   "version": "1.0.0",
-  "description": "Assingment for week 4",
+  "description": "Assingment for week 5",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Niko-Tiesmaki/BackEnd/tree/express-db"
+    "url": "https://github.com/Niko-Tiesmaki/BackEnd/tree/authentication"
   },
   "author": "Niko Tiesmäki",
   "license": "ISC",
@@ -26,6 +26,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.12.0"
   }
 }

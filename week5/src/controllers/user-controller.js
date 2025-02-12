@@ -80,6 +80,7 @@ const deleteUser = (req, res) => {
 
 // user authentication (login)
 const login = async (req, res) => {
+  console.log("Data received: ", req.body);
   const {username, password} = req.body;
   if (!username) {
     return res.status(401).json({message: 'Username missing.'});

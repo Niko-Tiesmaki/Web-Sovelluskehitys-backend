@@ -74,3 +74,16 @@ GET http://localhost:3000/api/entries
 
 ###
 GET http://localhost:3000/api/entries/2
+
+###
+POST http://localhost:3000/api/auth/login
+content-type: application/json
+
+{
+  "username": "newusername",
+  "password": "passwordx"
+}
+
+###
+GET http://localhost:3000/api/auth/me
+Authorization: Bearer <put-your-token-from-login-response-here>
